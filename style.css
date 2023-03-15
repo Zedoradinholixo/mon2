@@ -1,0 +1,99 @@
+*{ 
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: #9395d2;
+    width: 100vw;
+    
+}
+.img{
+    border-radius: .5rem;
+    justify-content: center;
+    align-items: center;
+    width:20%;
+    height: 60%;
+    rotate: 270deg;
+    margin-left: 40%;
+}
+/* From uiverse.io by @Ali-Tahmazi99 */
+button {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid #03045e;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+    z-index: 1;
+   }
+   
+   button::before,
+   button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transform: skew(15deg);
+    transition: all 0.5s;
+    overflow: hidden;
+    z-index: -1;
+   }
+   
+   button::before {
+    left: -10px;
+    background: #240046;
+   }
+   
+   button::after {
+    right: -10px;
+    background: #5a189a;
+   }
+   
+   button:hover::before,
+   button:hover::after {
+    width: 58%;
+   }
+   
+   button:hover span {
+    color: #e0aaff;
+    transition: 0.3s;
+   }
+   
+   button span {
+    color: #03045e;
+    font-size: 18px;
+    transition: all 0.3s ease-in;
+   }
+.btn{
+    border:none;
+    cursor: pointer;
+    color: #4e4f6f;
+    border-radius: 10px;
+    padding: 5px;
+    background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+.cp{ display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: #9395d2;
+    width: 90%;
+    height: 96%;
+    padding: 20px;
+    border-radius: 51px;
+background: linear-gradient(225deg, #8486bd, #9d9fe1);
+box-shadow:  -45px 45px 90px #4e4f6f,
+             45px -45px 90px #d8dbff;
+}
